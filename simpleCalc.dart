@@ -5,9 +5,8 @@ class Calc {
   double n2 = 0.0;
 
   //construtor
-  Calc(double num1, double num2) {
-    this.n1 = num1;
-    this.n2 = num2;
+  Calc(this.n1, this.n2) {
+
   }
 
   //métodos
@@ -47,12 +46,11 @@ class Calc {
 
     Calc calcular = new Calc(num1, num2);
 
-    print("""
-          Insira a operação\n
-          Soma: +\n
-          Subtração: -\n
-          Multiplicação: *
-          \nDivisão: /\n""");
+    print("""Insira a operação
+    Soma: +
+    Subtração: -
+    Multiplicação: *
+    Divisão: /""");
     String? op = stdin.readLineSync();
 
     switch (op) {
